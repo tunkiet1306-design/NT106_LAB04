@@ -1,10 +1,11 @@
+using System.ComponentModel;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace LAB04.Bai07;
-
-public partial class Bai07 : Form
+namespace LAB04.Bai07
 {
+    public partial class Bai07 : Form
+    {
     private const string MealDbSearchUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
     private const string MealDbRandomUrl = "https://www.themealdb.com/api/json/v1/1/random.php";
 
@@ -486,13 +487,13 @@ public partial class Bai07 : Form
         if (string.IsNullOrEmpty(_currentUser))
         {
             lblAuthStatus.ForeColor = Color.Firebrick;
-            lblAuthStatus.Text = "Unauthenticated";
+            lblAuthStatus.Text = "Chưa đăng nhập";
             bthLogout.Enabled = false;
         }
         else
         {
             lblAuthStatus.ForeColor = Color.SeaGreen;
-            lblAuthStatus.Text = $"Welcome, {_currentUser}";
+            lblAuthStatus.Text = $"Xin chào, {_currentUser}";
             bthLogout.Enabled = true;
         }
     }
@@ -518,9 +519,17 @@ public partial class Bai07 : Form
     private sealed class DishGridRow
     {
         public string Id { get; set; } = string.Empty;
+
+        [DisplayName("Tên món ăn")]
         public string TenMonAn { get; set; } = string.Empty;
+
+        [DisplayName("Danh mục / Giá")]
         public string GiaHoacDanhMuc { get; set; } = string.Empty;
+
+        [DisplayName("Khu vực / Địa chỉ")]
         public string DiaChiHoacKhuVuc { get; set; } = string.Empty;
+
+        [DisplayName("Người đóng góp")]
         public string NguoiDongGop { get; set; } = string.Empty;
     }
 
@@ -552,5 +561,6 @@ public partial class Bai07 : Form
 
         [JsonPropertyName("strMealThumb")]
         public string? StrMealThumb { get; set; }
+    }
     }
 }

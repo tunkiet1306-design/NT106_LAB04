@@ -1,5 +1,3 @@
-#nullable disable
-
 namespace LAB04.Bai07
 {
     partial class Bai07
@@ -7,7 +5,7 @@ namespace LAB04.Bai07
         /// <summary>
         ///  Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer? components = null;
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -126,7 +124,7 @@ namespace LAB04.Bai07
             // 
             this.txtSearch.Location = new System.Drawing.Point(250, 17);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PlaceholderText = "Tìm món ăn từ TheMealDB (vd: Chicken, Beef, Soup...)";
+            this.txtSearch.PlaceholderText = "Tìm món ăn (vd: Chicken, Beef, Soup...)";
             this.txtSearch.Size = new System.Drawing.Size(340, 23);
             this.txtSearch.TabIndex = 1;
             // 
@@ -174,7 +172,7 @@ namespace LAB04.Bai07
             this.tabAll.Padding = new System.Windows.Forms.Padding(6);
             this.tabAll.Size = new System.Drawing.Size(632, 414);
             this.tabAll.TabIndex = 0;
-            this.tabAll.Text = "All (Public API)";
+            this.tabAll.Text = "Tất cả (Cộng đồng)";
             this.tabAll.UseVisualStyleBackColor = true;
             // 
             // dgvAllDishes
@@ -384,7 +382,7 @@ namespace LAB04.Bai07
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(60, 15);
             this.lblUsername.TabIndex = 0;
-            this.lblUsername.Text = "Username";
+            this.lblUsername.Text = "Tên đăng nhập";
             // 
             // txtUsername
             // 
@@ -401,7 +399,7 @@ namespace LAB04.Bai07
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(57, 15);
             this.lblPassword.TabIndex = 2;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Text = "Mật khẩu";
             // 
             // txtPassword
             // 
@@ -584,7 +582,7 @@ namespace LAB04.Bai07
             this.lblPage.Name = "lblPage";
             this.lblPage.Size = new System.Drawing.Size(33, 15);
             this.lblPage.TabIndex = 2;
-            this.lblPage.Text = "Page";
+            this.lblPage.Text = "Trang";
             // 
             // cmbPage
             // 
@@ -613,7 +611,7 @@ namespace LAB04.Bai07
             this.lblPageSize.Name = "lblPageSize";
             this.lblPageSize.Size = new System.Drawing.Size(55, 15);
             this.lblPageSize.TabIndex = 5;
-            this.lblPageSize.Text = "Page size";
+            this.lblPageSize.Text = "Số dòng";
             // 
             // cmbPageSize
             // 
@@ -648,7 +646,7 @@ namespace LAB04.Bai07
             this.lblAuthStatus.Name = "lblAuthStatus";
             this.lblAuthStatus.Size = new System.Drawing.Size(96, 15);
             this.lblAuthStatus.TabIndex = 0;
-            this.lblAuthStatus.Text = "Unauthenticated";
+            this.lblAuthStatus.Text = "Chưa đăng nhập";
             // 
             // prgLoading
             // 
@@ -698,58 +696,58 @@ namespace LAB04.Bai07
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlTop;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button bthSearch;
-        private System.Windows.Forms.Button bthRandom;
-        private System.Windows.Forms.TabControl tabMain;
-        private System.Windows.Forms.TabPage tabAll;
-        private System.Windows.Forms.DataGridView dgvAllDishes;
-        private System.Windows.Forms.TabPage tabMine;
-        private System.Windows.Forms.DataGridView dgvMyDishes;
-        private System.Windows.Forms.GroupBox grpManageDish;
-        private System.Windows.Forms.Label lblTenMon;
-        private System.Windows.Forms.TextBox txtTenMon;
-        private System.Windows.Forms.Label lblGia;
-        private System.Windows.Forms.TextBox txtGia;
-        private System.Windows.Forms.Label lblDiaChi;
-        private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.Label lblHinhAnh;
-        private System.Windows.Forms.TextBox txtHinhAnh;
-        private System.Windows.Forms.Label lblMoTa;
-        private System.Windows.Forms.TextBox txtMoTa;
-        private System.Windows.Forms.Button bthThemMon;
-        private System.Windows.Forms.Button bthXoaMon;
-        private System.Windows.Forms.TabPage tabAccount;
-        private System.Windows.Forms.GroupBox grpAuth;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lblFullName;
-        private System.Windows.Forms.TextBox txtFullName;
-        private System.Windows.Forms.Button bthLogin;
-        private System.Windows.Forms.Button bthSignUp;
-        private System.Windows.Forms.Button bthLogout;
-        private System.Windows.Forms.Panel pnlDetail;
-        private System.Windows.Forms.PictureBox picDish;
-        private System.Windows.Forms.Label lblDetailHeader;
-        private System.Windows.Forms.Label lblDetailName;
-        private System.Windows.Forms.Label lblDetailMeta;
-        private System.Windows.Forms.TextBox txtDetailDesc;
-        private System.Windows.Forms.Panel pnlPagination;
-        private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Button bthPrevPage;
-        private System.Windows.Forms.Label lblPage;
-        private System.Windows.Forms.ComboBox cmbPage;
-        private System.Windows.Forms.Button bthNextPage;
-        private System.Windows.Forms.Label lblPageSize;
-        private System.Windows.Forms.ComboBox cmbPageSize;
-        private System.Windows.Forms.Panel pnlStatus;
-        private System.Windows.Forms.Label lblAuthStatus;
-        private System.Windows.Forms.ProgressBar prgLoading;
+        private System.Windows.Forms.Panel pnlTop = null!;
+        private System.Windows.Forms.Label lblTitle = null!;
+        private System.Windows.Forms.TextBox txtSearch = null!;
+        private System.Windows.Forms.Button bthSearch = null!;
+        private System.Windows.Forms.Button bthRandom = null!;
+        private System.Windows.Forms.TabControl tabMain = null!;
+        private System.Windows.Forms.TabPage tabAll = null!;
+        private System.Windows.Forms.DataGridView dgvAllDishes = null!;
+        private System.Windows.Forms.TabPage tabMine = null!;
+        private System.Windows.Forms.DataGridView dgvMyDishes = null!;
+        private System.Windows.Forms.GroupBox grpManageDish = null!;
+        private System.Windows.Forms.Label lblTenMon = null!;
+        private System.Windows.Forms.TextBox txtTenMon = null!;
+        private System.Windows.Forms.Label lblGia = null!;
+        private System.Windows.Forms.TextBox txtGia = null!;
+        private System.Windows.Forms.Label lblDiaChi = null!;
+        private System.Windows.Forms.TextBox txtDiaChi = null!;
+        private System.Windows.Forms.Label lblHinhAnh = null!;
+        private System.Windows.Forms.TextBox txtHinhAnh = null!;
+        private System.Windows.Forms.Label lblMoTa = null!;
+        private System.Windows.Forms.TextBox txtMoTa = null!;
+        private System.Windows.Forms.Button bthThemMon = null!;
+        private System.Windows.Forms.Button bthXoaMon = null!;
+        private System.Windows.Forms.TabPage tabAccount = null!;
+        private System.Windows.Forms.GroupBox grpAuth = null!;
+        private System.Windows.Forms.Label lblUsername = null!;
+        private System.Windows.Forms.TextBox txtUsername = null!;
+        private System.Windows.Forms.Label lblPassword = null!;
+        private System.Windows.Forms.TextBox txtPassword = null!;
+        private System.Windows.Forms.Label lblEmail = null!;
+        private System.Windows.Forms.TextBox txtEmail = null!;
+        private System.Windows.Forms.Label lblFullName = null!;
+        private System.Windows.Forms.TextBox txtFullName = null!;
+        private System.Windows.Forms.Button bthLogin = null!;
+        private System.Windows.Forms.Button bthSignUp = null!;
+        private System.Windows.Forms.Button bthLogout = null!;
+        private System.Windows.Forms.Panel pnlDetail = null!;
+        private System.Windows.Forms.PictureBox picDish = null!;
+        private System.Windows.Forms.Label lblDetailHeader = null!;
+        private System.Windows.Forms.Label lblDetailName = null!;
+        private System.Windows.Forms.Label lblDetailMeta = null!;
+        private System.Windows.Forms.TextBox txtDetailDesc = null!;
+        private System.Windows.Forms.Panel pnlPagination = null!;
+        private System.Windows.Forms.Label lblTotal = null!;
+        private System.Windows.Forms.Button bthPrevPage = null!;
+        private System.Windows.Forms.Label lblPage = null!;
+        private System.Windows.Forms.ComboBox cmbPage = null!;
+        private System.Windows.Forms.Button bthNextPage = null!;
+        private System.Windows.Forms.Label lblPageSize = null!;
+        private System.Windows.Forms.ComboBox cmbPageSize = null!;
+        private System.Windows.Forms.Panel pnlStatus = null!;
+        private System.Windows.Forms.Label lblAuthStatus = null!;
+        private System.Windows.Forms.ProgressBar prgLoading = null!;
     }
 }
