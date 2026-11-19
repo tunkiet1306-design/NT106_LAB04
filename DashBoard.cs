@@ -20,7 +20,7 @@ namespace LAB04
 
         private void btnBai03_Click(object? sender, EventArgs e) => OpenExercise(new Bai03.Bai3());
 
-        private void btnBai04_Click(object? sender, EventArgs e) => OpenExercise(new Bai04.Bai04());
+        private void btnBai04_Click(object? sender, EventArgs e) => OpenExercise(new Bai04.Bai4());
 
         private void btnBai05_Click(object? sender, EventArgs e) => OpenExercise(new Bai05.Bai05());
 
